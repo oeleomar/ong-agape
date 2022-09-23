@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/styles/reset.css">
   <link rel="stylesheet" href="./assets/styles/main.css">
   <link rel="stylesheet" href="./assets/styles/header.css">
+  <link rel="stylesheet" href="./assets/styles/main-section.css">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -23,7 +24,7 @@
     <img src="./assets/images/logo-agape-completo-removebg-preview.png" alt="Logo do Instituro Ágape" class="logo-img">
     <nav class="nav">
       <ul class="nav-container">
-        <li class="nav-links"><a href="#">Sobre</a></li>
+        <li class="nav-links"><a href="#sobre">Sobre</a></li>
         <li class="nav-links"><a href="#">Projetos</a></li>
         <li class="nav-links"><a href="#">Impacto</a></li>
         <li class="nav-links"><a href="#">Galeria</a></li>
@@ -32,8 +33,22 @@
     </nav>
   </header>
   <main>
-    <section>
-      <h1>Olá</h1>
+    <section class="container-bg-blue" id="sobre">
+      <div class="container-120 container">
+        <div class="text-content">
+          <h2 class="title aling-start">Quem nós somos?</h2>
+          <p>O Instituto Ágape nasceu em Abril de 2015 na comunidade Luís Otávio, bairro Monte das Oliveiras. Estamos focados em 3 eixos:</p>
+          <ul class="container-tasks">
+            <li class="task">Educação (reforço escolar, cursos de qualificação profissional)</li>
+            <li class="task">Empreendedorismo (cursos para mulheres empreendedoras)</li>
+            <li class="task">Ações Sociais (arrecadação e distribuição de doações em datas sazonais ou em situação de calamidade)</li>
+          </ul>
+          <p class="mvc"><span style="font-weight:bold">Missão</span>: Contribuir com a redução das desigualdades sociais por meio de ações humanitárias nas periferias de Manaus.</p>
+          <p class="mvc"><span style="font-weight:bold">Visão</span>: Ser um instituto referência em educação, empregabilidade, empreendedorismo social e combate à pobreza.</p>
+          <p class="mvc"><span style="font-weight:bold">Valores</span>: Educação, Equidade, Justiça Social, Fé, Humanização</p>
+        </div>
+        <img src="./assets/images/school.svg" alt="Imagem de uma moça com uma criânça" class="image-content">
+      </div>
     </section>
   </main>
   <footer></footer>

@@ -1,0 +1,106 @@
+main {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.container-120 {
+  max-width: 120rem;
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 0;
+}
+
+.container-bg-blue{
+  background: url('../images/background-soft.svg') no-repeat;
+  background-size: cover;
+}
+
+.container-full {
+  width: 100%;
+  padding: 0 5rem;
+  min-height: 100vh;
+}
+
+.container-smallheight {
+  height: 60vh;
+}
+
+/* SOBRE */
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 60px;
+  color: var(--color-blue);
+  margin-bottom: 3rem;
+}
+
+.aling-start {
+  text-align: start;
+}
+
+.text-content {
+  max-width: 55%;
+}
+
+.text-content p, .text-content ul li {
+  font-size: 22px;
+  color: var(--color-gray-900);
+
+}
+
+.container-tasks {
+  margin: 2rem 0;
+  margin-left: 4rem;
+}
+
+.task {
+  list-style: disc;
+}
+
+.mvc {
+  margin: 1.5rem 0; 
+}
+
+.image-content {
+  width: 40%;
+}
+
+@media (min-width: 1400px) {
+  
+}
+
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 900px) {
+  .container {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .text-content {
+    width: 100%;
+    margin:auto;
+    max-width: 90%;
+  }
+
+  .image-content {
+    width: 80%;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 40px;
+  }
+  .text-content p, .text-content ul li {
+    font-size: 18px;
+  }
+}
