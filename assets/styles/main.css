@@ -20,6 +20,10 @@ html {
   font-size: 62.5%;
 }
 
+:target {
+  scroll-margin-top: 13rem;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;

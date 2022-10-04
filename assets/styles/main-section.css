@@ -3,11 +3,16 @@ main {
   min-height: 100vh;
 }
 
+.section-container {
+  padding: 5rem 0;
+}
+
 .container-120 {
   max-width: 120rem;
   width: 100%;
   min-height: 100vh;
   padding: 8rem 0;
+  margin: 0 auto;
 }
 
 .container-bg-blue{
@@ -26,7 +31,7 @@ main {
 }
 
 /* SOBRE */
-.container {
+.container-sobre {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -61,6 +66,7 @@ main {
 
 .task {
   list-style: disc;
+  margin: 10px 0;
 }
 
 .mvc {
@@ -69,6 +75,55 @@ main {
 
 .image-content {
   width: 40%;
+}
+
+/* PROJETOS */
+
+.container-projetos {
+  max-width: 120rem;
+  margin: auto;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.description {
+  color: var(--color-blue);
+  font-size: 20px;
+}
+
+.grid-projects {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  counter-reset: grid-counter;
+}
+.grid-projects h3{
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--color-blue);
+  position: relative;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+}
+
+.grid-projects h3::before{
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  position: absolute;
+  top: -3rem;
+  left: -2rem;
+  font-size: 8rem;
+  font-style: italic;
+  transform: rotate(5deg);
+}
+
+.grid-projects p {
+  font-size: 22px;
+  color: var(--color-blue);
 }
 
 @media (min-width: 1400px) {
