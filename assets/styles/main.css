@@ -21,7 +21,7 @@ html {
 }
 
 :target {
-  scroll-margin-top: 13rem;
+  scroll-margin-top: 10rem;
 }
 
 body {
@@ -29,3 +29,8 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+p {
+  font-size: 16px;
+}
+

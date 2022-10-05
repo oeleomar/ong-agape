@@ -126,6 +126,42 @@ main {
   color: var(--color-blue);
 }
 
+/* Impacto */
+
+.impacto-text-container p {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.impacto-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  margin-top: 10rem;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 36rem;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+}
+
+.image-container img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+
+
+
+
 @media (min-width: 1400px) {
   
 }
