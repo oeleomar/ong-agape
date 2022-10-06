@@ -6,14 +6,14 @@
   align-items: center;
   padding: 0 4rem;
   position: fixed;
-  background: rgba(157, 201, 236, 0.8);
+  background: rgba(157, 201, 236, 0.9);
   z-index: 10;
   box-shadow: 0px 0px 10px #303030
 }
 /* Logo */
 
 .logo-img {
-  max-height: 100px;
+  max-height: 8rem;
 }
 
 /* NavLinks */
@@ -30,7 +30,6 @@
   font-family: inherit;
   color: var(--color-gray-900);
   text-transform: uppercase;
-  font-size: 18px;
 }
 
 .nav-links a:hover{
@@ -56,9 +55,6 @@ label.material-icons {
 
 
 @media (min-width: 1400px) {
-  .nav-links a {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -99,9 +95,6 @@ label.material-icons {
     transform: translateY(0%);
   }
 
-  .nav-links a  {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 600px) {
