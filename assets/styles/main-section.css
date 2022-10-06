@@ -266,7 +266,7 @@ main{
 
   /* GALERIA */
   .container {
-    max-width: 30rem;
+    max-width: 60rem;
   }
 
   .item {
@@ -279,5 +279,10 @@ main{
   .sobre::before {
     background: url('../images/backgound3-very-small.jpg') no-repeat;
     background-size: cover;
+  }
+
+  /* GALERIA */
+  .container {
+    max-width: 30rem;
   }
 }
