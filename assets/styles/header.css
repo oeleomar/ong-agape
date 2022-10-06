@@ -1,108 +1,27 @@
-.header-container {
-  width: 100%;
-  max-width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 4rem;
-  position: fixed;
-  background: rgba(157, 201, 236, 0.9);
+header {
+  position: relative;
+}
+
+.doe {
+  width: 30rem;
+  height: 35rem;
+  position: absolute;
   z-index: 10;
-  box-shadow: 0px 0px 10px #303030
-}
-/* Logo */
-
-.logo-img {
-  max-height: 8rem;
-}
-
-/* NavLinks */
-.nav {}
-
-.nav-container {
+  left: 70%;
+  background: rgba(230, 230, 230, 0.9);
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 2rem;
 }
 
-.nav-links a {
-  text-decoration: none;
-  font-weight: 600;
-  font-family: inherit;
-  color: var(--color-gray-900);
-  text-transform: uppercase;
-}
-
-.nav-links a:hover{
+.doe h3 {
   color: var(--color-blue);
 }
 
-label.material-icons {
-  position: absolute;
-  top: 5%;
-  left: 90%;
-  z-index: 2;
-  font-size: 42px;
-  color: var(--color-gray-900);
-  cursor: pointer;
-  user-select: none;
-  display: none;
-}
-
-.checkbox {
-  display: none;
-}
-
-
-
-@media (min-width: 1400px) {
-}
-
-@media (max-width: 1200px) {
-  
-}
-
-@media (max-width: 900px) {
-  .header-container {
-    transform: translateY(-100%);
-    transition: all .5s ease-in-out;
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
-    justify-content: start;
-    padding: 0;
-    overflow: hidden;
-    background: rgb(220, 220, 220);
-    position: absolute;
-  }
-
-  .logo-img {
-    margin: 12rem 0 10rem 0;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 4rem;
-  }
-  label.material-icons {
-    display: inline;
-  }
-
-  .checkbox:checked ~ header {
-    display: flex;
-    position: fixed;
-    overflow-y: hidden;
-    transform: translateY(0%);
-  }
-
-}
-
-@media (max-width: 600px) {
-  .logo-img {
-    width: 20rem;
-  }
-
-  label.material-icons {
-    left: 85%;
-  }
+.doe img {
+  width: 25rem;
 }
