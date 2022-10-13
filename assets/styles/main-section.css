@@ -23,11 +23,11 @@ main{
 .sobre {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   text-align: center;
   position: relative;
   background-color: black;
   padding-left: 20rem;
+  padding-top: 15rem;  
 }
 
 .sobre::before {
@@ -50,12 +50,18 @@ main{
   gap: 4rem;
 }
 
+.image-container-sobre {
+  background-color: rgba(249, 250, 251, .6);
+  padding: 2rem;
+  border-radius: 50px;
+}
+
 .text-container-sobre img {
-  width: 60rem;
+  width: 50rem;
 }
 
 .text-container-sobre h3 {
-  color: var(--color-blue-second);
+  color: var(--color-blue);
 }
 
 /* PROJETOS */
@@ -131,7 +137,7 @@ main{
 }
 
 .text-container-missao ul {
-  margin-left: 3rem;
+  margin-left: 6rem;
 }
 
 .text-container-missao ul li {
@@ -230,6 +236,10 @@ main{
   }
 
   /* PROJETOS */
+  .projetos article {
+    min-height: 30rem;
+  }
+
   .image-container-projetos {
     width: 8rem;
     height: 8rem;
@@ -242,15 +252,36 @@ main{
 }
 
 @media (max-width: 900px) {
+  .container-medium {
+    min-height: 100vh;
+  } 
+
+  .container-small {
+    min-height: 80vh;
+  }
+
+  /* SOBRE */
   .sobre::before {
     background: url('../images/backgound3-small.jpg') no-repeat;
     background-size: cover;
+  }
+
+  .sobre {
+    padding-top: 0;
+    padding-left: 0;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .text-container-sobre {
+    margin-top: 15rem;
   }
 
   /* PROJETOS */
   .projetos {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10rem 3rem;
   }
 
   .image-container-projetos {
@@ -264,7 +295,24 @@ main{
     height: 4rem;
   }
 
+  /* MISSAO */
+
+  .container-missao {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 0;
+  }
+
+  .container-missao img {
+    height: 40rem;
+  }
+
   /* GALERIA */
+  .gallery {
+    min-height: 60vh;
+  }
   .container {
     max-width: 60rem;
   }
@@ -276,11 +324,27 @@ main{
 }
 
 @media (max-width: 600px) {
+  
+  /* SOBRE */
   .sobre::before {
     background: url('../images/backgound3-very-small.jpg') no-repeat;
     background-size: cover;
   }
 
+  .image-container-sobre {
+    background-color: rgba(249, 250, 251, .6);
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  
+  .text-container-sobre img {
+    width: 30rem;
+  }
+
+  /* MISSAO */ 
+  .container-missao img {
+    max-height: 25rem;
+  }
   /* GALERIA */
   .container {
     max-width: 30rem;

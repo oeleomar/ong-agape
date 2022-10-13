@@ -43,7 +43,7 @@ h3 {
 }
 
 
-@media (min-width: 1201px){
+@media (min-width: 1401px){
   h1 {
     font-size: 60px;
   }
@@ -58,7 +58,7 @@ h3 {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   h1 {
     font-size: 50px;
   }
