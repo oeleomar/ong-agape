@@ -324,6 +324,14 @@ main{
     opacity: 1;
   }
 
+
+  /* ANIMATION  */
+  .projetos .show-left:nth-child(2) {
+    transition-delay: 0;
+  }
+  .projetos .show-left:nth-child(3) {
+    transition-delay: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -359,7 +367,7 @@ main{
 
 .hidden-right {
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(20%);
   transition: all 1s;
 }
 
@@ -371,7 +379,7 @@ main{
 
 .hidden-left {
   opacity: 0;
-  transform: translateX(-100%);
+  transform: translateX(-20%);
   transition: all 1s;
 }
 
@@ -390,3 +398,11 @@ main{
   opacity: 1;
   filter: blur(0px);
 }
+
+.projetos .show-left:nth-child(2) {
+  transition-delay: 200ms;
+}
+.projetos .show-left:nth-child(3) {
+  transition-delay: 400ms;
+}
+
