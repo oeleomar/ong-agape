@@ -18,11 +18,12 @@
   <link rel="stylesheet" href="./assets/styles/footer.css">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="./assets/src/scroll-animation.js"></script>
 </head>
 
 <body>
   <header class="">
-    <div class="doe">
+    <div class="doe doe-anim">
       <h3>Doe Por Pix</h3>
       <img src="./assets/images/qrcode.png" alt="">
     </div>
@@ -30,7 +31,7 @@
   <main>
     <section class="container-medium sobre">
       <div class="text-container-sobre">
-        <div class="image-container-sobre">
+        <div class="image-container-sobre hidden-right">
           <img src="./assets/images/Logo Agape_png.png" alt="Logo do Instituro Ágape" class="logo-img">
           <h3>Ajudando pessoas desde 2015</h3>
         </div>
@@ -38,7 +39,7 @@
     </section>
 
     <div class="container-limit container-small projetos">
-      <article>
+      <article class="hidden-left">
         <div class="image-container-projetos">
           <img src="./assets/images/Heart.svg" alt="Imagem de um coração">
         </div>
@@ -50,7 +51,7 @@
           desenvolvimento das crianças nas escolas.
         </p>
       </article>
-      <article>
+      <article class="hidden-left">
         <div class="image-container-projetos">
           <img src="./assets/images/Handshake.svg" alt="Imagem de um coração">
         </div>
@@ -61,7 +62,7 @@
           Páscoa, semana do trabalho, dia dos
           estuda</p>
       </article>
-      <article>
+      <article class="hidden-left">
         <div class="image-container-projetos">
           <img src="./assets/images/startup.svg" alt="Imagem de um coração">
         </div>
@@ -75,8 +76,8 @@
     <section class="container-small  missao">
       <div class="container-missao container-limit">
         <img src="./assets/images/missao-valores.jpg"
-          alt="Uma mulher desenhando com tinta guaxe no rosto de uma criança">
-        <div class="text-container-missao">
+          alt="Uma mulher desenhando com tinta guaxe no rosto de uma criança" class="hidden-left">
+        <div class="text-container-missao hidden-right">
           <h2>Nossa <span>Missão</span></h2>
           <p>O Instituto Ágape nasceu em Abril de 2015 na comunidade Luís Otávio, bairro Monte das Oliveiras. Estamos
             focados em 3 eixos:</p>
@@ -94,7 +95,7 @@
       </div>
     </section>
 
-    <section class="container-small gallery">
+    <section class="container-small gallery hidden-left">
       <h2>Galeria</h2>
       <div class="container">
         <div class="gallery-wrapper">
