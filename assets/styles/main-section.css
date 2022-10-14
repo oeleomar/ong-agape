@@ -322,7 +322,9 @@ main{
   .item {
     width: 25rem;
     height: 25rem;
+    opacity: 1;
   }
+
 }
 
 @media (max-width: 600px) {
