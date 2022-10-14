@@ -3,7 +3,7 @@ const observerNormal = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show-right");
     } else {
-      entry.target.classList.remove("show");
+      entry.target.classList.remove("show-right");
     }
   });
 });
