@@ -27,7 +27,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h1, h2, h3 {
