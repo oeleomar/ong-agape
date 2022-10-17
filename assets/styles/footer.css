@@ -1,3 +1,44 @@
 footer {
-  min-height: 50rem;
+  padding: 8rem 4rem;
+  width: 100%;
+  background-color: #2d2620;
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+}
+
+.colabs {
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.colabs img {
+  min-height: 15rem;
+  max-width: 15rem;
+}
+
+.footer-contact {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color-white);
+}
+
+.footer-contact img {
+  width: 30rem;
+}
+
+.footer-contact a{
+  color: var(--color-white);
+}
+
+.footer-contact h3 {
+  color: var(--color-blue);
 }
