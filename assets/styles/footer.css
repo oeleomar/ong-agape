@@ -1,10 +1,8 @@
 footer {
   padding: 8rem 4rem;
-  width: 100%;
   background-color: #2d2620;
   display: flex;
   flex-wrap: wrap-reverse;
-
 }
 
 .colabs {
@@ -31,6 +29,11 @@ footer {
   color: var(--color-white);
 }
 
+.text-content-footer {
+  width: 80%;
+  line-height: 1.5;
+}
+
 .footer-contact img {
   width: 30rem;
 }
@@ -41,4 +44,20 @@ footer {
 
 .footer-contact h3 {
   color: var(--color-blue);
+}
+
+@media (max-width: 900px) {
+  .footer-contact, .colabs{
+    width: 100%;
+  }
+
+  .footer-contact {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 8rem 0rem;
+  }
 }
