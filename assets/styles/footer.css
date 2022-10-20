@@ -5,8 +5,19 @@ footer {
   flex-wrap: wrap-reverse;
 }
 
-.colabs {
+.container-colabs {
+  display: flex;
+  flex-direction: column;
   width: 50%;
+  gap: 3rem;
+  text-align: center;
+}
+
+.container-colabs h3 {
+  color: var(--color-blue);
+}
+
+.colabs {
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -47,8 +58,15 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .footer-contact, .colabs{
+  footer {
+    overflow-x: hidden;
+  }
+  .footer-contact, .colabs, .container-colabs{
     width: 100%;
+  }
+
+  .container-colabs h3 {
+    font-size: 25px;
   }
 
   .footer-contact {
