@@ -31,7 +31,7 @@ main{
 
 .sobre::before {
   content: '';
-  background: url('../images/backgound3.jpg') no-repeat;
+  background: url('../images/background-large.jpg') no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -64,6 +64,14 @@ main{
 }
 
 /* PROJETOS */
+
+.main-projetos {
+  text-align: center;
+}
+
+.main-projetos h2 {
+  margin-bottom: 10rem;
+}
 
 .projetos {
   display: flex;
@@ -276,6 +284,59 @@ main{
   opacity: 1;
 }
 
+/* VOLUNTARIAR */
+
+.voluntariar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.voluntariar h2 {
+  margin-bottom: 10rem;
+}
+
+.voluntariar form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  padding: 5rem;
+  border-radius: 20px;
+  background-color: #2d2620;
+  width: 100%;
+}
+
+.voluntariar form input {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 18px;
+  padding: 1rem 0.5rem;
+}
+
+.voluntariar form textarea {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.voluntariar form label {
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.voluntariar form label span {
+  color: rgb(200, 0, 0);
+}
+
+.voluntariar .submit-button {
+  cursor: pointer;
+}
+
+
 @media (min-width: 1401px){
   .container-limit {
     max-width: 140rem;
@@ -284,7 +345,7 @@ main{
 
 @media (max-width: 1400px) {
   .sobre::before {
-    background: url('../images/backgound3-medium.jpg') no-repeat;
+    background: url('../images/background-medium.jpg') no-repeat;
     background-size: cover;
   }
 
@@ -315,7 +376,7 @@ main{
 
   /* SOBRE */
   .sobre::before {
-    background: url('../images/backgound3-small.jpg') no-repeat;
+    background: url('../images/background-small.jpg') no-repeat;
     background-size: cover;
   }
 
@@ -330,13 +391,36 @@ main{
     margin-top: 15rem;
   }
 
+
+  /* HISTÓRIA */
+
+  .container-historia {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 3rem 0;
+  }
+  
+  .text-container-historia {
+    width: 100%
+  }
+
+  .container-historia img {
+    width: auto;
+    max-height: 40rem;
+    height: auto;
+  }
+
   /* PROJETOS */
   .projetos {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10rem 3rem;
+    flex-direction: column;
   }
 
+  .main-projetos h2 {
+    margin-bottom: 10rem;
+  }
   .image-container-projetos {
     width: 6rem;
     height: 6rem;
@@ -376,6 +460,10 @@ main{
     opacity: 1;
   }
 
+  .voluntariar form {
+    max-width: auto;
+    width: 80%;
+  }
 
   /* ANIMATION  */
   .projetos .show-left:nth-child(2) {
@@ -390,7 +478,7 @@ main{
   
   /* SOBRE */
   .sobre::before {
-    background: url('../images/backgound3-very-small.jpg') no-repeat;
+    background: url('../images/background-xsmall.jpg') no-repeat;
     background-size: cover;
   }
 
@@ -398,11 +486,21 @@ main{
     background-color: rgba(249, 250, 251, .6);
     padding: 2rem;
     border-radius: 20px;
+    max-width: 80%;
   }
   
   .text-container-sobre img {
-    width: 30rem;
+    width: 25rem;
   }
+
+  /* historia */
+  .container-historia img {
+    max-width: 30rem;
+    width: auto;
+    max-height: 25rem;
+    height: auto;
+  }
+
 
   /* MISSAO */ 
   .container-missao img {
@@ -411,6 +509,33 @@ main{
   /* GALERIA */
   .container {
     max-width: 30rem;
+  }
+
+  .text-container-missao ul {
+    margin-left: 3rem;
+  }
+
+
+  .voluntariar {
+    background-color: #2d2620;
+  }
+
+  .voluntariar h2 {
+    color: var(--color-blue);
+  }
+
+  .voluntariar form {
+    max-width: auto;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 0;
+  }
+
+  .voluntariar form input, .voluntariar form textarea {
+    font-size: 16px;
+    width: 100%;
+    align-self: center;
+
   }
 }
 

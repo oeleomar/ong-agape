@@ -24,16 +24,3 @@ const observerLeft = new IntersectionObserver((entries) => {
 
 const hiddenLeft = document.querySelectorAll(".hidden-left");
 hiddenLeft.forEach((el) => observerLeft.observe(el));
-
-const doe = document.querySelector(".doe-anim");
-const observerDoe = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry);
-    if (entry.isIntersecting) {
-      entry.target.classList.add("doe-anim-animate");
-    } else {
-      entry.target.classList.remove("doe-anim-animate");
-    }
-  });
-});
-observerDoe.observe(doe);
