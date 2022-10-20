@@ -3,12 +3,19 @@ footer {
   background-color: #2d2620;
   display: flex;
   flex-wrap: wrap-reverse;
+  overflow-x: hidden;
+}
+
+iframe {
+  margin-top: 2rem;
+  width: 50%;
+  height: 200px;
 }
 
 .container-colabs {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   gap: 3rem;
   text-align: center;
 }
@@ -40,6 +47,8 @@ footer {
   color: var(--color-white);
 }
 
+
+
 .text-content-footer {
   width: 80%;
   line-height: 1.5;
@@ -61,6 +70,11 @@ footer {
   footer {
     overflow-x: hidden;
   }
+
+  iframe {
+    width: 80%;
+  }
+
   .footer-contact, .colabs, .container-colabs{
     width: 100%;
   }
@@ -77,5 +91,9 @@ footer {
 @media (max-width: 600px) {
   footer {
     padding: 8rem 0rem;
+  }
+
+  iframe {
+    width: 80%;
   }
 }
