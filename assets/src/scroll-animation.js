@@ -13,7 +13,6 @@ hiddenElements.forEach((el) => observerNormal.observe(el));
 
 const observerLeft = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show-left");
     } else {
