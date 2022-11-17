@@ -25,16 +25,19 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden !important;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--color-gray-800);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 900;
 }
 
@@ -42,8 +45,7 @@ h3 {
   font-weight: 600;
 }
 
-
-@media (min-width: 1401px){
+@media (min-width: 1401px) {
   h1 {
     font-size: 60px;
   }
@@ -53,7 +55,9 @@ h3 {
   h3 {
     font-size: 30px;
   }
-  p, li, a {
+  p,
+  li,
+  a {
     font-size: 22px;
   }
 }
@@ -68,7 +72,9 @@ h3 {
   h3 {
     font-size: 25px;
   }
-  p, li, a {
+  p,
+  li,
+  a {
     font-size: 18px;
   }
 }
@@ -82,9 +88,6 @@ h3 {
   }
   h3 {
     font-size: 22px;
-  }
-  p, li, a {
-    font-size: 16px;
   }
 }
 

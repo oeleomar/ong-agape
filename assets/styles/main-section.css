@@ -1,4 +1,4 @@
-main{
+main {
   background-color: var(--color-white);
 }
 
@@ -21,7 +21,6 @@ section {
   padding: 10rem 0;
 }
 
-
 /* SOBRE */
 
 .sobre {
@@ -34,8 +33,8 @@ section {
 }
 
 .sobre::before {
-  content: '';
-  background: url('../images/background-large.jpg') no-repeat;
+  content: "";
+  background: url("../images/background-large.jpg") no-repeat;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -43,7 +42,7 @@ section {
   left: 0;
   bottom: 0;
   z-index: 0;
-  filter: brightness(.5) opacity(90%);
+  filter: brightness(0.5) opacity(90%);
 }
 
 .text-container-sobre {
@@ -54,7 +53,7 @@ section {
 }
 
 .image-container-sobre {
-  background-color: rgba(249, 250, 251, .6);
+  background-color: rgba(249, 250, 251, 0.6);
   padding: 2rem;
   border-radius: 50px;
 }
@@ -72,7 +71,6 @@ section {
 .main-projetos {
   text-align: center;
   background-color: #2d2620;
-
 }
 
 .main-projetos h2 {
@@ -94,7 +92,6 @@ section {
   max-width: 35rem;
   min-height: 35rem;
   color: var(--color-white);
-
 }
 
 .image-container-projetos {
@@ -164,7 +161,6 @@ section {
   list-style: disc;
 }
 
-
 /* MISSÃO */
 
 .missao {
@@ -219,7 +215,9 @@ section {
   align-items: center;
   flex-direction: column;
   background: #2d2620;
-
+}
+.control.disabled {
+  display: none;
 }
 
 .gallery h2 {
@@ -227,17 +225,17 @@ section {
   color: var(--color-blue);
 }
 
-.container {
+.gallery .container {
   position: relative;
   padding: 1.5rem;
-  max-width: 120rem;
+  max-width: 80%;
   margin: 0 auto;
 }
 
 .gallery-wrapper {
   overflow-x: auto;
   -ms-overflow-style: none;
-  scrollbar-width: none;  
+  scrollbar-width: none;
 }
 
 .gallery-wrapper::-webkit-scrollbar {
@@ -261,7 +259,7 @@ section {
   line-height: 250px;
   text-align: center;
   color: var(--color-white);
-  background: linear-gradient(to left, transparent 0%, black 200% );
+  background: linear-gradient(to left, transparent 0%, black 200%);
   border: none;
   cursor: pointer;
   opacity: 0.1;
@@ -270,12 +268,11 @@ section {
 .arrow-right {
   left: auto;
   right: 0;
-  background: linear-gradient(to right, transparent 0%, black 200% );
-  
+  background: linear-gradient(to right, transparent 0%, black 200%);
 }
 
 .arrow-left:hover,
-.arrow-right:hover{
+.arrow-right:hover {
   opacity: 1;
 }
 
@@ -284,7 +281,7 @@ section {
   height: 300px;
   flex-shrink: 0;
   opacity: 0.6;
-  transition: all .6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .current-item {
@@ -343,8 +340,7 @@ section {
   cursor: pointer;
 }
 
-
-@media (min-width: 1401px){
+@media (min-width: 1401px) {
   .container-limit {
     max-width: 140rem;
   }
@@ -352,7 +348,7 @@ section {
 
 @media (max-width: 1400px) {
   .sobre::before {
-    background: url('../images/background-medium.jpg') no-repeat;
+    background: url("../images/background-medium.jpg") no-repeat;
     background-size: cover;
   }
 
@@ -375,7 +371,7 @@ section {
 @media (max-width: 900px) {
   .container-medium {
     min-height: 100vh;
-  } 
+  }
 
   .container-small {
     min-height: 80vh;
@@ -383,7 +379,7 @@ section {
 
   /* SOBRE */
   .sobre::before {
-    background: url('../images/background-small.jpg') no-repeat;
+    background: url("../images/background-small.jpg") no-repeat;
     background-size: cover;
   }
 
@@ -393,11 +389,10 @@ section {
     justify-content: center;
     align-items: flex-start;
   }
-  
+
   .text-container-sobre {
     margin-top: 15rem;
   }
-
 
   /* HISTÓRIA */
 
@@ -407,9 +402,9 @@ section {
     gap: 4rem;
     padding: 3rem 0;
   }
-  
+
   .text-container-historia {
-    width: 100%
+    width: 100%;
   }
 
   .container-historia img {
@@ -482,20 +477,19 @@ section {
 }
 
 @media (max-width: 600px) {
-  
   /* SOBRE */
   .sobre::before {
-    background: url('../images/background-xsmall.jpg') no-repeat;
+    background: url("../images/background-xsmall.jpg") no-repeat;
     background-size: cover;
   }
 
   .image-container-sobre {
-    background-color: rgba(249, 250, 251, .6);
+    background-color: rgba(249, 250, 251, 0.6);
     padding: 2rem;
     border-radius: 20px;
     max-width: 80%;
   }
-  
+
   .text-container-sobre img {
     width: 25rem;
   }
@@ -508,8 +502,7 @@ section {
     height: auto;
   }
 
-
-  /* MISSAO */ 
+  /* MISSAO */
   .container-missao img {
     max-height: 25rem;
   }
@@ -521,7 +514,6 @@ section {
   .text-container-missao ul {
     margin-left: 3rem;
   }
-
 
   .voluntariar {
     background-color: #2d2620;
@@ -538,14 +530,13 @@ section {
     border-radius: 0;
   }
 
-  .voluntariar form input, .voluntariar form textarea {
+  .voluntariar form input,
+  .voluntariar form textarea {
     font-size: 16px;
     width: 100%;
     align-self: center;
-
   }
 }
-
 
 /* ANIMATIONS */
 
@@ -559,7 +550,6 @@ section {
   opacity: 1;
   transform: translateX(0);
 }
-
 
 .hidden-left {
   opacity: 0;
@@ -589,4 +579,3 @@ section {
 .projetos .show-left:nth-child(3) {
   transition-delay: 400ms;
 }
-

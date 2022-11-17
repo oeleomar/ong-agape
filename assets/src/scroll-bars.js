@@ -5,6 +5,9 @@ const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 
 controls.forEach((control) => {
+  if (window.innerWidth < 900) {
+    control.classList.add("disabled");
+  }
   control.addEventListener("click", () => {
     const isLeft = control.classList.contains("arrow-left");
 
